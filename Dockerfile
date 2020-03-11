@@ -60,9 +60,9 @@ RUN  mkdir -p /usr/hdp/current && \
      tar --no-same-owner -xf hadoop-3.1.0.tar.gz && \
      rm apache-hive-3.1.0-bin.tar.gz && \
      rm hadoop-3.1.0.tar.gz && \
-     echo '<configuration  xmlns:xi=“http://www.w3.org/2001/XInclude”><property><name>beeline.hs2.jdbc.url.container</name><value>HIVE_JDBC</value></property><property><name>beeline.hs2.jdbc.url.default</name><value>container</value></property></configuration>' >> /tmp/beeline-site.xml && \
-     echo '<?xml version=“1.0” encoding=“UTF-8"?>' >> /tmp/core-site.xml && \
-     echo '<?xml-stylesheet type=“text/xsl” href=“configuration.xsl”?>' >> /tmp/core-site.xml && \
+     echo '<configuration  xmlns:xi="http://www.w3.org/2001/XInclude"><property><name>beeline.hs2.jdbc.url.container</name><value>HIVE_JDBC</value></property><property><name>beeline.hs2.jdbc.url.default</name><value>container</value></property></configuration>' >> /tmp/beeline-site.xml && \
+     echo '<?xml version="1.0" encoding="UTF-8"?>' >> /tmp/core-site.xml && \
+     echo '<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>' >> /tmp/core-site.xml && \
      echo '<configuration><property><name>fs.defaultFS</name><value>HADOOP_DEFAULT_FS</value><final>true</final></property></configuration>' >>  /tmp/core-site.xml && \
      sed -i -e "s|HIVE_JDBC|${HIVE_JDBC}|g" /tmp/beeline-site.xml && \
      sed -i -e "s|HADOOP_DEFAULT_FS|${HADOOP_DEFAULT_FS}|g"  /tmp/core-site.xml && \
