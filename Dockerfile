@@ -95,3 +95,7 @@ RUN conda env update -q -f /tmp/environment.yml && \
     python -m bash_kernel.install && \
     conda clean -y --all && \
     conda env export -n "root"
+
+# Install bash kernel
+RUN /opt/conda/bin/pip install bash_kernel && \
+    python -m bash_kernel.install
