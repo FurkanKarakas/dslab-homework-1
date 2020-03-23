@@ -2,7 +2,7 @@
 
 ## Due: 24.03.2020 23:59 CET
 
-This repository consists of the first homework of the course *Data Science in Practice*. This homework is completed by a group of four people. Our group name is called *oh-my-git*.
+This repository consists of the first homework of the course *Lab in Data Science*. This homework is completed by a group of four people. Our group name is called *oh-my-git*.
 
 ## Members of our group
 
